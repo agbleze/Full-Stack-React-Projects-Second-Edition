@@ -1,0 +1,8 @@
+{
+  "name": "mern-skeleton",
+  "version": "2.0.0",
+  "description": "A MERN stack skeleton web application recreate",
+  "main": "index.js",
+  "author": "Linus Agbleze",
+  "license": "MIT"
+}
