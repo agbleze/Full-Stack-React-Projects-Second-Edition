@@ -4,10 +4,10 @@ import cookieParser from 'cookie-parser'
 import compress from 'compression'
 import cors from 'cors'
 import helmet from 'helmet'
+import template from './../template'
 
 const app = express()
 /* configure express */
-export default app
 
 /* configure express app with body-parser */
 app.use(bodyParser.json())
@@ -20,3 +20,9 @@ app.use(compress())
 app.use(helmet())
 /* configuring express app with cors */
 app.use(cors())
+
+app.get('/', (req, res) => {
+    res.status(200).send(template())
+})
+
+export default app
